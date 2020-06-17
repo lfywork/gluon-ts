@@ -24,6 +24,8 @@ __all__ = [
     "cdf_to_gaussian_forward_transform",
     "CDFtoGaussianTransform",
     "ConcatFeatures",
+    "ContinuousTimeInstanceSplitter",
+    "ContinuousTimeUniformSampler",
     "ExpandDimArray",
     "ExpectedNumInstanceSampler",
     "FilterTransformation",
@@ -48,6 +50,13 @@ __all__ = [
     "Transformation",
     "UniformSplitSampler",
     "VstackFeatures",
+    "MissingValueImputation",
+    "LeavesMissingValues",
+    "DummyValueImputation",
+    "MeanValueImputation",
+    "LastValueImputation",
+    "CausalMeanValueImputation",
+    "RollingMeanValueImputation",
 ]
 
 from ._base import (
@@ -82,6 +91,13 @@ from .feature import (
     AddConstFeature,
     AddTimeFeatures,
     AddAgeFeature,
+    MissingValueImputation,
+    LeavesMissingValues,
+    DummyValueImputation,
+    MeanValueImputation,
+    LastValueImputation,
+    CausalMeanValueImputation,
+    RollingMeanValueImputation,
 )
 
 from .field import (
